@@ -37,10 +37,9 @@ function Dashboard() {
                                         <p className="card-text">{project.description}</p> 
                                         <div className="d-flex justify-content-between align-items-center"> 
                                             <div className="btn-group"> 
-                                                <a type="button" className="btn btn-sm btn-outline-secondary" href={`${GetEndpoint()}/pages/${project.id}`}>
-                                                    View
-                                                </a> 
-                                                <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button> 
+                                                <a type="button" className="btn btn-sm btn-outline-secondary" 
+                                                href={`${GetEndpoint()}/pages/${project.id}`}>Открыть лендинг</a> 
+                                                <button type="button" className="btn btn-sm btn-outline-secondary">Редактировать проект</button> 
                                             </div>
                                         </div> 
                                     </div>
