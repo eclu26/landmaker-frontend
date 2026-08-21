@@ -15,3 +15,7 @@ Api.interceptors.request.use((config) => {
 });
 
 export default Api;
+
+export function GetEndpoint() {
+    return "http://localhost:8000/api/v1"
+}

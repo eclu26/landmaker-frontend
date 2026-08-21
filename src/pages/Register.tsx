@@ -26,30 +26,24 @@ function Register() {
 
     return (
         <>
-            <h1>Регистрация</h1>
-
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label>Почта</label>
-                    <input
-                        type="email"
+                <h1 className="h3 mb-3 fw-normal">Регистрация</h1> 
+                <div className="form-floating"> 
+                    <input type="email" className="form-control" id="floatingInput" placeholder="example@mail.com" 
                         value={email}
                         onChange={(event) => setEmail(event.target.value)}
-                        required
-                    />
-                </div>
-
-                <div>
-                    <label>Пароль</label>
-                    <input
-                        type="password"
+                        required /> 
+                    <label htmlFor="floatingInput">Почта</label> 
+                </div> 
+                <div className="form-floating"> 
+                    <input type="password" className="form-control" id="floatingPassword" placeholder="passw0rd" 
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}
-                        required
-                    />
-                </div>
-
-                <button type="submit">Зарегистрироваться</button>
+                        required /> 
+                    <label htmlFor="floatingPassword">Пароль</label> 
+                </div> 
+                <button className="btn btn-primary w-100 py-2" type="submit">Зарегистрироваться</button> 
+                <p className="mt-5 mb-3 text-body-secondary">© 2026</p> 
             </form>
         </>
     );
