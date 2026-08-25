@@ -32,14 +32,13 @@ function CreateProject() {
                     <label htmlFor="floatingInput">Название проекта</label> 
                 </div> 
                 <div className="form-floating"> 
-                    <input type="text" className="form-control" id="floatingPassword" placeholder="Автосервис на ул. Пушкина, 67"
+                    <input type="text" className="form-control" id="floatingInput" placeholder="Автосервис на ул. Пушкина, 67"
                         value={description}
                         onChange={(event) => setDescription(event.target.value)}
                         required /> 
-                    <label htmlFor="floatingPassword">Описание</label> 
+                    <label htmlFor="floatingInput">Описание</label> 
                 </div> 
                 <button className="btn btn-primary w-100 py-2" type="submit">Создать</button> 
-                <p className="mt-5 mb-3 text-body-secondary">© 2026</p> 
             </form>
         </>
     );

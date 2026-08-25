@@ -5,6 +5,7 @@ import Auth from "./pages/Auth";
 import Register from "./pages/Register";
 import Projects from "./pages/Projects"
 import CreateProject from "./pages/CreateProject";
+import Editor from "./pages/Editor";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/create" element={<CreateProject />} />
+            <Route path="/projects/:projectId" element={<Editor />} />
           </Routes>
         </BrowserRouter>
       </div>
